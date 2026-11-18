@@ -32,28 +32,37 @@ Today I define the product, write the requirements, prioritise the backlog and s
 
 ## Featured projects
 
-### 1. Tutor booking app: a paid year-long programme
+### 1. License renewal tracker: clickable prototype
+*Live concept prototype · HTML and JavaScript, Vercel · made-up data*
+- **Problem:** licensed nurses have to work out which required hours are still missing before their renewal date.
+- **Users:** a licensed nurse preparing a renewal.
+- **Product decisions:** show hours left by required topic, recommend the shortest set of courses, recalculate after each completed course, and keep the renewal packet locked until every requirement is met.
+- **Delivered:** working click-through, user story, acceptance criteria, stakeholder questions and scope limits. Real licensing rules, sign-in, payment and board submission are out of scope.
+- **Outcome:** concept only. No users or results claimed.
+- **Try it:** https://license-renewal-demo.vercel.app (see the Product spec tab)
+
+### 2. Tutor booking app: a paid year-long programme
 *In build · Next.js, Supabase, Stripe (test mode), Resend, Vercel*
 - **Problem:** booking a tutor means back-and-forth messages to find a time, then separate payment.
 - **Users:** students or parents, tutors, the business owner (admin).
 - **Product decisions:** one product (52 weekly lessons with one tutor), one price for all (AED 20,000, 5% VAT included), instant confirmation, no tutor approval. Refund rule set before building: full refund if no lesson taken, otherwise per unused lesson. No double-booking of a slot. Times stored in UTC and shown in each person's time zone. Role-based access (student, tutor, admin).
 - **Delivered so far:** PRD, 18 v1 stories with acceptance checks, screen contracts and design system, database schema, unit-tested money, refund and time logic, and briefs for two parallel build lanes.
 - **Outcome:** not live yet. No results claimed.
-- **Code and documents:** https://github.com/Anthomalone/ai-agency-tutor-booking (PRD in `docs/`, design in `design/`)
+- **Code and documents:** https://github.com/Anthomalone/ai-agency-tutor-booking/tree/feature/foundation (app foundation and tests on this branch, PRD in `docs/`, design in `design/`)
 
-### 2. Island travel inquiry site: customer journey and staff workflow
+### 3. Island travel inquiry site: customer journey and staff workflow
 *In build · Next.js, Supabase, Resend, Cloudflare Turnstile, Vercel*
 - **Problem:** travellers want meaningful island trips but planning and trusting options takes time.
 - **Users:** travellers (no account) and agency staff.
 - **Product decisions:** 11 stories in v1, 9 deliberately parked (AI companion, map, mobile app, French). Recommendations use transparent scoring, max three, each with a "why it fits" line and an "indicative only" note. Duplicate-submit protection. Staff sign in by email link, approved list only, with an inquiry status pipeline.
 - **Outcome:** not live yet. No results claimed.
 
-### 3. Quote builder: shipped and live
+### 4. Quote builder: shipped and live
 *Live · HTML and JavaScript, Vercel*
 - A working quote tool: price by area and finish level, optional extras, 5% VAT, quote number and 14-day validity. All rates sit in one file so the owner can update prices without touching logic.
-- https://rimal-quote.vercel.app *(include only if cleared; shows a company name)*
+- Built as a training project. Happy to show it live.
 
 ## Skills
 Product strategy and roadmap · PRDs, user stories, acceptance criteria · backlog prioritisation · release planning · UX collaboration · QA mindset · AI-assisted development and review · Stripe payments and refunds logic · stakeholder communication.
 
-*The island travel repository is private. I'm happy to walk through it live.*
+*The island travel and quote builder repositories are private. I'm happy to walk through them live.*
